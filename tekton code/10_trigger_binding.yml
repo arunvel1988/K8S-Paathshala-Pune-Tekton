@@ -1,0 +1,10 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: clone-build-push-binding
+spec:
+  params:
+    - name: repo-url
+      value: https://github.com/arunvel1988/appv1_docker
+    - name: image-reference
+      value: arunvel1988/infy-docker-nov2023

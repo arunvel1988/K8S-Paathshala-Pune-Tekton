@@ -1,0 +1,19 @@
+1) minikube start --driver=kvm2 --cni=flannel --cpus=6 --memory=12000
+
+
+#######################
+# kind create cluster --config kind.yml
+#############################
+
+2) Install tekton
+ - tekton trigger
+
+3) kubectl get pods --namespace tekton-pipelines --watch
+
+
+4) kubectl port-forward svc/el-clone-build-push-event-listener 8080:8080
+
+
+5) ngrok http 8080
+
+6) 

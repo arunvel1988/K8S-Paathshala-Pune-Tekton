@@ -1,0 +1,23 @@
+apiVersion: tekton.dev/v1beta1
+kind: Task
+metadata:
+  name: multi-step-task
+spec:
+  steps:
+    - name: step1
+      image: alpine
+      script: |
+        echo "Executing step 1"
+        # Add commands for the first step
+
+    - name: step2
+      image: alpine
+      script: |
+        echo "Executing step 2"
+        # Add commands for the second step
+
+    - name: step3
+      image: alpine
+      script: |
+        echo "Executing step 3"
+        # Add commands for the third step

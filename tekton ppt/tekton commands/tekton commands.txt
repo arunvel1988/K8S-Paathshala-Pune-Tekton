@@ -1,0 +1,68 @@
+tekton commands
+
+
+1) tkn version
+
+tkn pipeline delete mypipeline -n myspace
+
+tkn pipeline describe mypipeline
+
+
+tkn pipeline list
+
+logs
+
+tkn pipeline logs -f mypipeline
+
+tkn task logs mytask mytaskrun -n myspace
+
+tkn pipelinerun logs mypipelinerun -a -n myspace
+
+
+
+tkn pipeline start mypipeline
+
+tkn pipelinerun cancel mypipelinerun -n myspace
+
+tkn pipelinerun delete mypipelinerun1 mypipelinerun2 -n myspace
+
+
+tkn pipelinerun delete -n myspace --keep 5 
+
+tkn pipelinerun delete --all
+
+
+tkn pipelinerun describe mypipelinerun -n myspace
+
+tkn pipelinerun list -n myspace
+
+tkn pipelinerun logs mypipelinerun -a -n myspace
+
+tkn task delete mytask1 mytask2 -n myspace
+
+tkn task describe mytask -n myspace
+
+tkn task list -n myspace
+
+tkn task logs mytask mytaskrun -n myspace
+
+tkn task start mytask -s <ServiceAccountName> -n myspace
+
+tkn taskrun cancel mytaskrun -n myspace
+
+tkn taskrun delete mytaskrun1 mytaskrun2 -n myspace
+
+tkn taskrun delete -n myspace --keep 5 
+
+tkn taskrun describe mytaskrun -n myspace
+
+tkn taskrun list -n myspace
+
+tkn taskrun logs -f mytaskrun -n myspace
+
+	tkn condition delete mycondition1 -n myspace
+
+tkn condition describe mycondition1 -n myspace
+
+
+
